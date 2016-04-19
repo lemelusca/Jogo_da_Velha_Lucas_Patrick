@@ -15,21 +15,32 @@ class Jogo:
                 #Falta alterar o texto do botão   
             
             else:
-                aviso=Tk()
-                aviso.title("Aviso")
-                mensagem=Label(aviso,"Jogada errada, tente novamente")
-                mensagem.grid()
-                botão_aviso=Button(aviso, width=6, text="OK", command=#tem que colocar um comando de fechar a janela)
-                botão_aviso.grid()
-                #arrumar posições das widgets da mensagem de aviso
+                #aviso
+    
     def verifica_ganhador():
         for x in range(3):
-            if (A[x][0]==A[x][1] and A[x][1]==A[x][2]) or (A[0][x]==A[1][x] and A[1][x]==A[2][x]) or (A[0][0]==A[1][1] and A[1][1]==A[2][2]) or (A[0][2]==A[1][1] and A[1][1]==A[0][2]):
+            if A[x][0]==A[x][1] and A[x][1]==A[x][2]:
                 if A[x][0]=="X":
                     return 1
                 elif A[x][0]=="O":
                     return 2
-            elif A[x][0]==0 or A[x][1]==0 or A[x][2]==0:
-                return
-            else:
-                return 0
+        for y in range(3):
+            if  A[0][y]==A[1][y] and A[1][y]==A[2][y]:
+                if A[0][y]=="X":
+                    return 1
+                elif A[0][y]=="O":
+                    return 2                                
+        if (A[0][0]==A[1][1] and A[1][1]==A[2][2]) or (A[0][2]==A[1][1] and A[1][1]==A[2][0]):
+            if A[1][1]=="X":
+                return 1
+            elif A[1][1]=="0":
+                return 2
+        elif:
+            for e in range(3):
+                if A[e][0]==0:
+                    return
+                else:
+                    return 0
+                    
+    def limpa_jogadas():
+        
