@@ -17,48 +17,39 @@ class Tabuleiro:
         
                   
         self.botao1 = tk.Button(self.tabuleiro, height=6, width= 13)
-        self.botao1.configure(command = self.click1)
-        self.botao1.configure(command = self.mudar_label)
+        self.botao1.configure(command = self.mudanças1)
         self.botao1.grid(row=0, column=0,)
         
         self.botao2 = tk.Button(self.tabuleiro, height=6, width= 13)
-        self.botao2.configure(command = self.click2)
-        self.botao2.configure(command = self.mudar_label)
+        self.botao2.configure(command = self.mudanças2)
         self.botao2.grid(row=0, column=1)
         
         self.botao3 = tk.Button(self.tabuleiro, height=6, width= 13)
-        self.botao3.configure(command = self.click3)
-        self.botao3.configure(command = self.mudar_label)
+        self.botao3.configure(command = self.mudanças3)
         self.botao3.grid(row=0, column=2)
         
         self.botao4 = tk.Button(self.tabuleiro, height=6, width= 13)
-        self.botao4.configure(command = self.click4)
-        self.botao4.configure(command = self.mudar_label)
+        self.botao4.configure(command = self.mudanças4)
         self.botao4.grid(row=1, column=0)
         
         self.botao5 = tk.Button(self.tabuleiro, height=6, width= 13)
-        self.botao5.configure(command = self.click5)
-        self.botao5.configure(command = self.mudar_label)
+        self.botao5.configure(command = self.mudanças5)
         self.botao5.grid(row=1, column=1)
         
         self.botao6 = tk.Button(self.tabuleiro, height=6, width= 13)
-        self.botao6.configure(command = self.click6)
-        self.botao6.configure(command = self.mudar_label)
+        self.botao6.configure(command = self.mudanças6)        
         self.botao6.grid(row=1, column=2)
         
         self.botao7 = tk.Button(self.tabuleiro, height=6, width= 13)
-        self.botao7.configure(command = self.click7)
-        self.botao7.configure(command = self.mudar_label)
+        self.botao7.configure(command = self.mudanças7)        
         self.botao7.grid(row=2, column=0)
         
         self.botao8 = tk.Button(self.tabuleiro, height=6, width= 13)
-        self.botao8.configure(command = self.click8)
-        self.botao8.configure(command = self.mudar_label)
+        self.botao8.configure(command = self.mudanças8)        
         self.botao8.grid(row=2, column=1)
         
         self.botao9 = tk.Button(self.tabuleiro, height=6, width= 13)
-        self.botao9.configure(command = self.click9)
-        self.botao9.configure(command = self.mudar_label)
+        self.botao9.configure(command = self.mudanças9)
         self.botao9.grid(row=2, column=2)
         
         self.jogada = tk.Label(self.tabuleiro, width= 50, text = "Proxima Jogada: X", anchor = "w")
@@ -86,7 +77,43 @@ class Tabuleiro:
             self.botao6["text"]=""
             self.botao7["text"]=""
             self.botao8["text"]=""
-            self.botao9["text"]=""           
+            self.botao9["text"]="" 
+            
+    def mudanças1(self):
+        self.click1()  
+        self.mudar_label()
+        
+    def mudanças2(self):
+        self.click2()  
+        self.mudar_label()
+        
+    def mudanças3(self):
+        self.click3()  
+        self.mudar_label()
+        
+    def mudanças4(self):
+        self.click4()  
+        self.mudar_label()
+        
+    def mudanças5(self):
+        self.click5()  
+        self.mudar_label()
+        
+    def mudanças6(self):
+        self.click6()  
+        self.mudar_label()
+        
+    def mudanças7(self):
+        self.click7()  
+        self.mudar_label()
+        
+    def mudanças8(self):
+        self.click8()  
+        self.mudar_label()
+        
+    def mudanças9(self):
+        self.click9()  
+        self.mudar_label()
             
             
     #funções para os botões receber a jogada                 
