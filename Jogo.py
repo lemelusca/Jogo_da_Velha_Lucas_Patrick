@@ -1,7 +1,6 @@
 class Jogo():
     def __init__(self):
-        self.jogador="O"
-        self.A=[["z","z","z"],["z","z","z"],["z","z","z"]]  
+        self.jogador="O"  
         
     def recebe_jogada(self, linha, coluna):
         if A[linha][coluna]=="z":
@@ -31,12 +30,12 @@ class Jogo():
                     elif A[1][1]=="X":
                         return 2
                 else:
-                    if A[a][b]=="z":
-                        return
-                    else:
+                    if A[a][b]!="z":
                         return 0
+                    else:
+                        return 
                     
-    def limpa_jogadas(self):
+    def limpa_jogadas(self):y
         if verifica_ganhador()==0 or verifica_ganhador()==1 or verifica_ganhador()==2:
             A=[["z","z","z"],["z","z","z"],["z","z","z"]]
             
