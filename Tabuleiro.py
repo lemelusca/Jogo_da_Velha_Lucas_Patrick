@@ -14,6 +14,7 @@ class Tabuleiro:
         self.tabuleiro = tk.Tk()
         self.tabuleiro.title("Jogo da Velha")
         
+        self.jogo = Jogo()       
         
                   
         self.botao1 = tk.Button(self.tabuleiro, height=6, width= 13)
