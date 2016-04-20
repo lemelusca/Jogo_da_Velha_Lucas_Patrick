@@ -6,7 +6,7 @@ Created on Mon Apr 18 16:53:11 2016
 """
 
 import tkinter as tk
-import Jogo.py
+from Jogo import Jogo
 
 
 class Tabuleiro:
@@ -86,6 +86,7 @@ class Tabuleiro:
         self.mudar_label()
         if self.verifica_ganhador()==0 or self.verifica_ganhador==1 or self.verifica_ganhador==2:
         
+            
     def mudanças2(self):
         self.click2()  
         self.mudar_label()
