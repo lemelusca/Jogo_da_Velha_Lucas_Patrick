@@ -1,7 +1,7 @@
 class Jogo():
-    A=[["z","z","z"],["z","z","z"],["z","z","z"]]    
     def __init__(self):
         self.jogador="O"
+        self.A=[["z","z","z"],["z","z","z"],["z","z","z"]]  
         
     def recebe_jogada(self, linha, coluna):
         if A[linha][coluna]=="z":
