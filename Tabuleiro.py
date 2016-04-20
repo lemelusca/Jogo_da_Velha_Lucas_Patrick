@@ -74,7 +74,20 @@ class Tabuleiro:
         if self.jogada["text"]=="Proxima Jogada: X":
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
-            self.jogada["text"]="Proxima Jogada: X"        
+            self.jogada["text"]="Proxima Jogada: X"  
+            
+    def limpar_painel(self):
+        if self.verifica_ganhador==0 or self.verifica_ganhador==1 or self.verifica_ganhador==2:
+            self.botao1["text"]=""
+            self.botao2["text"]=""
+            self.botao3["text"]=""
+            self.botao4["text"]=""
+            self.botao5["text"]=""
+            self.botao6["text"]=""
+            self.botao7["text"]=""
+            self.botao8["text"]=""
+            self.botao9["text"]=""           
+            
             
     #funções para os botões receber a jogada                 
     def click1(self):
