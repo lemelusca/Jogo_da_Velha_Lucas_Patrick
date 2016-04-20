@@ -120,7 +120,7 @@ class Tabuleiro:
     def click1(self):
         self.jogo.recebe_jogada(0,0)
         self.botao1.configure(text = self.jogo.jogador)
-        
+        self.jogo.verifica_ganhador()
             
     def click2(self):
         self.jogo.recebe_jogada(0,1)
