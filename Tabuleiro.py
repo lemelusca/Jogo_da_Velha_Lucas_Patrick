@@ -6,6 +6,7 @@ Created on Mon Apr 18 16:53:11 2016
 """
 
 import tkinter as tk
+import Jogo.py
 
 
 class Tabuleiro:
@@ -13,8 +14,9 @@ class Tabuleiro:
     def __init__(self):
         self.tabuleiro = tk.Tk()
         self.tabuleiro.title("Jogo da Velha")
+
+        self.jogo = Jogo()
         
-        self.jogo = Jogo()       
         
                   
         self.botao1 = tk.Button(self.tabuleiro, height=6, width= 13)
@@ -163,7 +165,7 @@ class Tabuleiro:
         self.botao9.configure(text = self.jogo.jogador)
         self.jogo.verifica_ganhador()  
 
-       
+A=[["z","z","z"],["z","z","z"],["z","z","z"]]      
 app=Tabuleiro()
 app.iniciar() 
        
