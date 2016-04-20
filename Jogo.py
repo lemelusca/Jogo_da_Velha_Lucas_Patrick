@@ -1,7 +1,8 @@
 class Jogo():
+    A=[["z","z","z"],["z","z","z"],["z","z","z"]]    
     def __init__(self):
         self.jogador="O"
-#criar uma matrz de elementos 0 antes de iniciar o programa
+        
     def recebe_jogada(self, linha, coluna):
         if A[linha][coluna]=="z":
             A[linha][coluna]=self.jogador
