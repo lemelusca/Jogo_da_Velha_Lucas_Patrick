@@ -71,20 +71,20 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: X"  
             
     def limpar_painel(self):
-        if self.verifica_ganhador==0 or self.verifica_ganhador==1 or self.verifica_ganhador==2:
-            self.botao1["text"]=""
-            self.botao2["text"]=""
-            self.botao3["text"]=""
-            self.botao4["text"]=""
-            self.botao5["text"]=""
-            self.botao6["text"]=""
-            self.botao7["text"]=""
-            self.botao8["text"]=""
-            self.botao9["text"]="" 
+        self.botao1["text"]=""
+        self.botao2["text"]=""
+        self.botao3["text"]=""
+        self.botao4["text"]=""
+        self.botao5["text"]=""
+        self.botao6["text"]=""
+        self.botao7["text"]=""
+        self.botao8["text"]=""
+        self.botao9["text"]="" 
             
     def mudanças1(self):
-        self.click1()  
+        self.click1()
         self.mudar_label()
+        if self.verifica_ganhador()==0 or self.verifica_ganhador==1 or self.verifica_ganhador==2:
         
     def mudanças2(self):
         self.click2()  
@@ -165,7 +165,7 @@ class Tabuleiro:
         self.botao9.configure(text = self.jogo.jogador)
         self.jogo.verifica_ganhador()  
 
-A=[["z","z","z"],["z","z","z"],["z","z","z"]]      
+     
 app=Tabuleiro()
 app.iniciar() 
        
