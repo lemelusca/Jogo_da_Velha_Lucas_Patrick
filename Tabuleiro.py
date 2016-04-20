@@ -13,7 +13,8 @@ class Tabuleiro:
         self.tabuleiro = tk.Tk()
         self.tabuleiro.title("Jogo da Velha")
         
-        self.jogo = Jogo()
+        self.jogo = Jogo()       
+        
         
         self.botao1 = tk.Button(self.tabuleiro, height=6, width= 13)
         self.botao1.configure(command = self.click1)
@@ -85,14 +86,13 @@ class Tabuleiro:
         self.botao8.configure(text = self.jogada.get())
         
     def click9(self):
-        self.botao9.configure(text = self.jogada.get()) 
-       
-
+        self.botao9.configure(text = self.jogada.get())
         
-    
-    
-jogo=Tabuleiro()
-jogo.iniciar() 
+class Jogo():
+    "ola"
+       
+app=Tabuleiro()
+app.iniciar() 
        
         
 
