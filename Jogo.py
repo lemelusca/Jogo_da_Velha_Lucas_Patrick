@@ -1,46 +1,42 @@
-import tkinter as tk
-
-class Jogo:
+class Jogo():
+    def __init__(self):
+        self.jogador="O"
 #criar uma matrz de elementos 0 antes de iniciar o programa
-    def recebe_jogada(linha, coluna):#achar como atribuir as coordenadas dos botões para linha e coluna 
-        #tem que atribuir as coordenadas do botão para a matriz
-         while #alguma coisa:   
+    def recebe_jogada(self, linha, coluna):
+        if A[linha][coluna]=="z":
+            A[linha][coluna]=self.jogador
+            if self.jogador=="X":
+                self.jogador="O"
+            elif self.jogador=="O":
+                self.jogador="X"         
          
-            if A[linha][coluna]==0:
-                A[linha][coluna]=jogador
-                if jogador=="X":
-                    jogador="O"
-                elif jogador=="O":
-                    jogador="X"
-                #Falta alterar o texto do botão   
-            
-            else:
-                #aviso
-    
-    def verifica_ganhador():
-        for x in range(3):
-            if A[x][0]==A[x][1] and A[x][1]==A[x][2]:
-                if A[x][0]=="X":
+    def verifica_ganhador(self):
+        for a in range(3):
+            if A[a][0]==A[a][1] and A[a][1]==A[a][2]:
+                if A[a][0]=="X":
                     return 1
-                elif A[x][0]=="O":
+                elif A[a][0]=="O":
                     return 2
-        for y in range(3):
-            if  A[0][y]==A[1][y] and A[1][y]==A[2][y]:
-                if A[0][y]=="X":
+        for b in range(3):
+            if  A[0][b]==A[1][b] and A[1][b]==A[2][b]:
+                if A[0][b]=="X":
                     return 1
-                elif A[0][y]=="O":
+                elif A[0][b]=="O":
                     return 2                                
         if (A[0][0]==A[1][1] and A[1][1]==A[2][2]) or (A[0][2]==A[1][1] and A[1][1]==A[2][0]):
             if A[1][1]=="X":
                 return 1
             elif A[1][1]=="0":
                 return 2
-        elif:
+        else:
             for e in range(3):
-                if A[e][0]==0:
+                if A[e][0]=="z":
                     return
                 else:
                     return 0
                     
-    def limpa_jogadas():
+    def limpa_jogadas(self):
+        if verifica_ganhador()==0 or verifica_ganhador()==1 or verifica_ganhador()==2:
+            A=[["z","z","z"],["z","z","z"],["z","z","z"]]
+            
         
