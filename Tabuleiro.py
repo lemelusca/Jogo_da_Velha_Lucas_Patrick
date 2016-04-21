@@ -68,8 +68,8 @@ class Tabuleiro:
         if self.jogada["text"]=="Proxima Jogada: X":
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
-            self.jogada["text"]="Proxima Jogada: X"  
-            
+            self.jogada["text"]="Proxima Jogada: X"
+                    
     def limpar_painel(self):
         self.botao1["text"]=""
         self.botao2["text"]=""
@@ -84,40 +84,82 @@ class Tabuleiro:
     def mudanças1(self):
         self.click1()
         self.mudar_label()
-        if self.verifica_ganhador()==0 or self.verifica_ganhador==1 or self.verifica_ganhador==2:
         
-            
+        if self.jogo.verifica_ganhador()==1:
+            self.jogada["text"]="Jogador X ganhou"
+        elif self.jogo.verifica_ganhador()==2:
+            self.jogada["text"]="Jogador O ganhou" 
+        
     def mudanças2(self):
         self.click2()  
         self.mudar_label()
+       
+        if self.jogo.verifica_ganhador()==1:
+            self.jogada["text"]="Jogador X ganhou"
+        elif self.jogo.verifica_ganhador()==2:
+            self.jogada["text"]="Jogador O ganhou" 
         
     def mudanças3(self):
         self.click3()  
         self.mudar_label()
+       
+        if self.jogo.verifica_ganhador()==1:
+            self.jogada["text"]="Jogador X ganhou"
+        elif self.jogo.verifica_ganhador()==2:
+            self.jogada["text"]="Jogador O ganhou" 
         
     def mudanças4(self):
         self.click4()  
         self.mudar_label()
+       
+        if self.jogo.verifica_ganhador()==1:
+            self.jogada["text"]="Jogador X ganhou"
+        elif self.jogo.verifica_ganhador()==2:
+            self.jogada["text"]="Jogador O ganhou" 
         
     def mudanças5(self):
         self.click5()  
         self.mudar_label()
         
+        if self.jogo.verifica_ganhador()==1:
+            self.jogada["text"]="Jogador X ganhou"
+        elif self.jogo.verifica_ganhador()==2:
+            self.jogada["text"]="Jogador O ganhou" 
+        
     def mudanças6(self):
         self.click6()  
         self.mudar_label()
+        
+        if self.jogo.verifica_ganhador()==1:
+            self.jogada["text"]="Jogador X ganhou"
+        elif self.jogo.verifica_ganhador()==2:
+            self.jogada["text"]="Jogador O ganhou" 
         
     def mudanças7(self):
         self.click7()  
         self.mudar_label()
         
+        if self.jogo.verifica_ganhador()==1:
+            self.jogada["text"]="Jogador X ganhou"
+        elif self.jogo.verifica_ganhador()==2:
+            self.jogada["text"]="Jogador O ganhou" 
     def mudanças8(self):
         self.click8()  
         self.mudar_label()
         
+        if self.jogo.verifica_ganhador()==1:
+            self.jogada["text"]="Jogador X ganhou"
+        elif self.jogo.verifica_ganhador()==2:
+            self.jogada["text"]="Jogador O ganhou" 
+        
     def mudanças9(self):
         self.click9()  
         self.mudar_label()
+   
+        if self.jogo.verifica_ganhador()==1:
+            self.jogada["text"]="Jogador X ganhou"
+        elif self.jogo.verifica_ganhador()==2:
+            self.jogada["text"]="Jogador O ganhou" 
             
             
     #funções para os botões receber a jogada                 
