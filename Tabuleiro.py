@@ -17,8 +17,6 @@ class Tabuleiro:
 
         self.jogo = Jogo()
         
-        
-                  
         self.botao1 = tk.Button(self.tabuleiro, height=6, width= 13)
         self.botao1.configure(command = self.mudanças1)
         self.botao1.grid(row=0, column=0,)
@@ -77,7 +75,6 @@ class Tabuleiro:
     def mudanças1(self):
         self.click1()
         
-        
         if self.jogada["text"]=="Proxima Jogada: X":
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
@@ -94,7 +91,6 @@ class Tabuleiro:
             
     def mudanças2(self):
         self.click2()  
-        
         
         if self.jogada["text"]=="Proxima Jogada: X":
             self.jogada["text"]="Proxima Jogada: O"
@@ -113,7 +109,6 @@ class Tabuleiro:
     def mudanças3(self):
         self.click3()  
         
-        
         if self.jogada["text"]=="Proxima Jogada: X":
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
@@ -131,7 +126,6 @@ class Tabuleiro:
     def mudanças4(self):
         self.click4()  
         
-        
         if self.jogada["text"]=="Proxima Jogada: X":
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
@@ -148,7 +142,6 @@ class Tabuleiro:
         
     def mudanças5(self):
         self.click5()  
-        
         
         if self.jogada["text"]=="Proxima Jogada: X":
             self.jogada["text"]="Proxima Jogada: O"
@@ -199,8 +192,7 @@ class Tabuleiro:
             self.jogo.limpa_jogadas()
     def mudanças8(self):
         self.click8()  
-        
-        
+    
         if self.jogada["text"]=="Proxima Jogada: X":
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
@@ -218,7 +210,6 @@ class Tabuleiro:
     def mudanças9(self):
         self.click9()  
        
-        
         if self.jogada["text"]=="Proxima Jogada: X":
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":

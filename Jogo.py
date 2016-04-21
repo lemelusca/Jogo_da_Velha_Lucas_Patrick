@@ -54,8 +54,9 @@ class Jogo():
             elif self.A[1][1]=="X":
                 return 2
         else:
-            return
-                    
+            if (self.A[0][0]!="z") and (self.A[0][1]!="z") and (self.A[0][2]!="z") and (self.A[1][0]!="z") and (self.A[1][1]!="z") and (self.A[1][2]!="z") and (self.A[2][0]!="z") and  (self.A[2][1]!="z") and (self.A[2][2]!="z"): 
+                return 0
+        
     def limpa_jogadas(self):
         if self.verifica_ganhador()==0 or self.verifica_ganhador()==1 or self.verifica_ganhador()==2:
             self.A=[["z","z","z"],["z","z","z"],["z","z","z"]]
