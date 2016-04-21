@@ -84,9 +84,7 @@ class Tabuleiro:
     def mudanças1(self):
         self.click1()
         self.mudar_label()
-        if self.verifica_ganhador()==0 or self.verifica_ganhador==1 or self.verifica_ganhador==2:
-        
-            
+          
     def mudanças2(self):
         self.click2()  
         self.mudar_label()
@@ -165,7 +163,7 @@ class Tabuleiro:
         self.jogo.recebe_jogada(2,2)
         self.botao9.configure(text = self.jogo.jogador)
         self.jogo.verifica_ganhador()  
-
+        print(self.jogo.verifica_ganhador())
      
 app=Tabuleiro()
 app.iniciar() 
