@@ -88,6 +88,10 @@ class Tabuleiro:
             self.jogada["text"]="Jogador O ganhou"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+        elif self.jogo.verifica_ganhador()==0:
+            self.jogada["text"]="Empate"
+            self.limpar_painel()
+            self.jogo.limpa_jogadas()
             
     def mudanças2(self):
         self.click2()  
@@ -103,6 +107,10 @@ class Tabuleiro:
             self.jogo.limpa_jogadas()
         elif self.jogo.verifica_ganhador()==2:
             self.jogada["text"]="Jogador O ganhou" 
+            self.limpar_painel()
+            self.jogo.limpa_jogadas()
+        elif self.jogo.verifica_ganhador()==0:
+            self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
         
@@ -122,6 +130,10 @@ class Tabuleiro:
             self.jogada["text"]="Jogador O ganhou" 
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+        elif self.jogo.verifica_ganhador()==0:
+            self.jogada["text"]="Empate"
+            self.limpar_painel()
+            self.jogo.limpa_jogadas()
         
     def mudanças4(self):
         self.click4()  
@@ -137,6 +149,10 @@ class Tabuleiro:
             self.jogo.limpa_jogadas()
         elif self.jogo.verifica_ganhador()==2:
             self.jogada["text"]="Jogador O ganhou" 
+            self.limpar_painel()
+            self.jogo.limpa_jogadas()
+        elif self.jogo.verifica_ganhador()==0:
+            self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
         
@@ -156,6 +172,10 @@ class Tabuleiro:
             self.jogada["text"]="Jogador O ganhou" 
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+        elif self.jogo.verifica_ganhador()==0:
+            self.jogada["text"]="Empate"
+            self.limpar_painel()
+            self.jogo.limpa_jogadas()
         
     def mudanças6(self):
         self.click6()
@@ -171,6 +191,10 @@ class Tabuleiro:
             self.jogo.limpa_jogadas()
         elif self.jogo.verifica_ganhador()==2:
             self.jogada["text"]="Jogador O ganhou" 
+            self.limpar_painel()
+            self.jogo.limpa_jogadas()
+        elif self.jogo.verifica_ganhador()==0:
+            self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
         
@@ -190,6 +214,11 @@ class Tabuleiro:
             self.jogada["text"]="Jogador O ganhou" 
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+        elif self.jogo.verifica_ganhador()==0:
+            self.jogada["text"]="Empate"
+            self.limpar_painel()
+            self.jogo.limpa_jogadas()
+            
     def mudanças8(self):
         self.click8()  
     
@@ -204,6 +233,10 @@ class Tabuleiro:
             self.jogo.limpa_jogadas()
         elif self.jogo.verifica_ganhador()==2:
             self.jogada["text"]="Jogador O ganhou"
+            self.limpar_painel()
+            self.jogo.limpa_jogadas()
+        elif self.jogo.verifica_ganhador()==0:
+            self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
         
@@ -221,6 +254,10 @@ class Tabuleiro:
             self.jogo.limpa_jogadas()
         elif self.jogo.verifica_ganhador()==2:
             self.jogada["text"]="Jogador O ganhou" 
+            self.limpar_painel()
+            self.jogo.limpa_jogadas()
+        elif self.jogo.verifica_ganhador()==0:
+            self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             
