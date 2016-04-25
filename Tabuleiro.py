@@ -6,6 +6,7 @@ Created on Mon Apr 18 16:53:11 2016
 """
 
 import tkinter as tk
+
 from Jogo import Jogo
 
 
@@ -84,15 +85,17 @@ class Tabuleiro:
             self.jogada["text"]="Jogador X ganhou"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
             self.jogada["text"]="Jogador O ganhou"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
-            
+                        
     def mudanças2(self):
         self.click2()  
         
@@ -105,15 +108,17 @@ class Tabuleiro:
             self.jogada["text"]="Jogador X ganhou"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
             self.jogada["text"]="Jogador O ganhou" 
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
-        
+                    
     def mudanças3(self):
         self.click3()  
         
@@ -126,15 +131,17 @@ class Tabuleiro:
             self.jogada["text"]="Jogador X ganhou"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
             self.jogada["text"]="Jogador O ganhou" 
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
-        
+            
     def mudanças4(self):
         self.click4()  
         
@@ -147,15 +154,17 @@ class Tabuleiro:
             self.jogada["text"]="Jogador X ganhou"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
             self.jogada["text"]="Jogador O ganhou" 
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
-        
+                    
     def mudanças5(self):
         self.click5()  
         
@@ -168,15 +177,17 @@ class Tabuleiro:
             self.jogada["text"]="Jogador X ganhou"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
             self.jogada["text"]="Jogador O ganhou" 
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
-        
+                    
     def mudanças6(self):
         self.click6()
         
@@ -189,15 +200,17 @@ class Tabuleiro:
             self.jogada["text"]="Jogador X ganhou"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
             self.jogada["text"]="Jogador O ganhou" 
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
-        
+                    
     def mudanças7(self):
         self.click7()  
         
@@ -210,15 +223,17 @@ class Tabuleiro:
             self.jogada["text"]="Jogador X ganhou"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
             self.jogada["text"]="Jogador O ganhou" 
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
-            
+                       
     def mudanças8(self):
         self.click8()  
     
@@ -231,15 +246,17 @@ class Tabuleiro:
             self.jogada["text"]="Jogador X ganhou"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
             self.jogada["text"]="Jogador O ganhou"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
-        
+            
     def mudanças9(self):
         self.click9()  
        
@@ -252,15 +269,17 @@ class Tabuleiro:
             self.jogada["text"]="Jogador X ganhou"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
             self.jogada["text"]="Jogador O ganhou" 
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
-            
+                        
             
     #funções para os botões receber a jogada                 
     def click1(self):
