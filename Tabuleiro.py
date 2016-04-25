@@ -80,6 +80,12 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Jogador X ganhou":
+            self.jogada["text"]="Proxima Jogada: O"
+        elif self.jogada["text"]=="Jogador O ganhou":
+            self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Empate":
+            self.jogada["text"]="Proxima Jogada: O"
         
         if self.jogo.verifica_ganhador()==1:
             self.jogada["text"]="Jogador X ganhou"
@@ -95,7 +101,8 @@ class Tabuleiro:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
-                        
+            self.jogo.jogador = "O"
+                                    
     def mudanças2(self):
         self.click2()  
         
@@ -103,6 +110,12 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Jogador X ganhou":
+            self.jogada["text"]="Proxima Jogada: O"
+        elif self.jogada["text"]=="Jogador O ganhou":
+            self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Empate":
+            self.jogada["text"]="Proxima Jogada: O"
        
         if self.jogo.verifica_ganhador()==1:
             self.jogada["text"]="Jogador X ganhou"
@@ -118,6 +131,8 @@ class Tabuleiro:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
+            
                     
     def mudanças3(self):
         self.click3()  
@@ -126,6 +141,12 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Jogador X ganhou":
+            self.jogada["text"]="Proxima Jogada: O"
+        elif self.jogada["text"]=="Jogador O ganhou":
+            self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Empate":
+            self.jogada["text"]="Proxima Jogada: O"
        
         if self.jogo.verifica_ganhador()==1:
             self.jogada["text"]="Jogador X ganhou"
@@ -141,6 +162,7 @@ class Tabuleiro:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
             
     def mudanças4(self):
         self.click4()  
@@ -149,6 +171,12 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Jogador X ganhou":
+            self.jogada["text"]="Proxima Jogada: O"
+        elif self.jogada["text"]=="Jogador O ganhou":
+            self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Empate":
+            self.jogada["text"]="Proxima Jogada: O"
        
         if self.jogo.verifica_ganhador()==1:
             self.jogada["text"]="Jogador X ganhou"
@@ -164,6 +192,7 @@ class Tabuleiro:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
                     
     def mudanças5(self):
         self.click5()  
@@ -172,6 +201,12 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Jogador X ganhou":
+            self.jogada["text"]="Proxima Jogada: O"
+        elif self.jogada["text"]=="Jogador O ganhou":
+            self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Empate":
+            self.jogada["text"]="Proxima Jogada: O"
         
         if self.jogo.verifica_ganhador()==1:
             self.jogada["text"]="Jogador X ganhou"
@@ -187,6 +222,7 @@ class Tabuleiro:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
                     
     def mudanças6(self):
         self.click6()
@@ -195,7 +231,13 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
-        
+        elif self.jogada["text"]=="Jogador X ganhou":
+            self.jogada["text"]="Proxima Jogada: O"
+        elif self.jogada["text"]=="Jogador O ganhou":
+            self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Empate":
+            self.jogada["text"]="Proxima Jogada: O"
+            
         if self.jogo.verifica_ganhador()==1:
             self.jogada["text"]="Jogador X ganhou"
             self.limpar_painel()
@@ -210,6 +252,7 @@ class Tabuleiro:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
                     
     def mudanças7(self):
         self.click7()  
@@ -218,6 +261,12 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Jogador X ganhou":
+            self.jogada["text"]="Proxima Jogada: O"
+        elif self.jogada["text"]=="Jogador O ganhou":
+            self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Empate":
+            self.jogada["text"]="Proxima Jogada: O"
         
         if self.jogo.verifica_ganhador()==1:
             self.jogada["text"]="Jogador X ganhou"
@@ -233,6 +282,7 @@ class Tabuleiro:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
                        
     def mudanças8(self):
         self.click8()  
@@ -241,6 +291,12 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Jogador X ganhou":
+            self.jogada["text"]="Proxima Jogada: O"
+        elif self.jogada["text"]=="Jogador O ganhou":
+            self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Empate":
+            self.jogada["text"]="Proxima Jogada: O"
         
         if self.jogo.verifica_ganhador()==1:
             self.jogada["text"]="Jogador X ganhou"
@@ -256,6 +312,7 @@ class Tabuleiro:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
             
     def mudanças9(self):
         self.click9()  
@@ -264,6 +321,12 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Jogador X ganhou":
+            self.jogada["text"]="Proxima Jogada: O"
+        elif self.jogada["text"]=="Jogador O ganhou":
+            self.jogada["text"]="Proxima Jogada: X"
+        elif self.jogada["text"]=="Empate":
+            self.jogada["text"]="Proxima Jogada: O"
    
         if self.jogo.verifica_ganhador()==1:
             self.jogada["text"]="Jogador X ganhou"
@@ -279,6 +342,7 @@ class Tabuleiro:
             self.jogada["text"]="Empate"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
+            self.jogo.jogador = "O"
                         
             
     #funções para os botões receber a jogada                 
