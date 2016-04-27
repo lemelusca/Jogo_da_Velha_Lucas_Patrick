@@ -325,56 +325,46 @@ class Tabuleiro:
         self.jogo.recebe_jogada(0,0)
         self.botao1.configure(text = self.jogo.jogador, state = "disabled") 
         self.jogo.verifica_ganhador()
-        
-        print (self.jogo.A)
             
     def click2(self):
         self.jogo.recebe_jogada(0,1)
         self.botao2.configure(text = self.jogo.jogador, state = "disabled")
         self.jogo.verifica_ganhador()
-        print (self.jogo.A)
         
     def click3(self):
         self.jogo.recebe_jogada(0,2)
         self.botao3.configure(text = self.jogo.jogador, state = "disabled") 
         self.jogo.verifica_ganhador()
-        print (self.jogo.A)
         
     def click4(self):
         self.jogo.recebe_jogada(1,0)
         self.botao4.configure(text = self.jogo.jogador, state = "disabled")    
         self.jogo.verifica_ganhador()
-        print (self.jogo.A)
         
     def click5(self):
         self.jogo.recebe_jogada(1,1)
         self.botao5.configure(text = self.jogo.jogador, state = "disabled")   
         self.jogo.verifica_ganhador()
-        print (self.jogo.A)
         
     def click6(self):
         self.jogo.recebe_jogada(1,2)
         self.botao6.configure(text = self.jogo.jogador, state = "disabled")    
         self.jogo.verifica_ganhador()
-        print (self.jogo.A)
         
     def click7(self):
         self.jogo.recebe_jogada(2,0)
         self.botao7.configure(text = self.jogo.jogador, state = "disabled") 
         self.jogo.verifica_ganhador()
-        print (self.jogo.A)
         
     def click8(self):
         self.jogo.recebe_jogada(2,1)
         self.botao8.configure(text = self.jogo.jogador, state = "disabled")
         self.jogo.verifica_ganhador()
-        print (self.jogo.A)
         
     def click9(self):
         self.jogo.recebe_jogada(2,2)
         self.botao9.configure(text = self.jogo.jogador, state = "disabled") 
         self.jogo.verifica_ganhador()
-        print (self.jogo.A)
      
 app=Tabuleiro()
 app.iniciar() 
