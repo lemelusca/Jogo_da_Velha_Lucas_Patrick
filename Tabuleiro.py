@@ -7,6 +7,8 @@ Created on Mon Apr 18 16:53:11 2016
 
 import tkinter as tk
 
+import tkinter.messagebox as tkm
+
 from Jogo import Jogo
 
 
@@ -80,25 +82,22 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Jogador X ganhou":
-            self.jogada["text"]="Proxima Jogada: O"
-        elif self.jogada["text"]=="Jogador O ganhou":
-            self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Empate":
-            self.jogada["text"]="Proxima Jogada: O"
-        
+                
         if self.jogo.verifica_ganhador()==1:
-            self.jogada["text"]="Jogador X ganhou"
+            tkm.showinfo(title = "Game Over", message = "Jogador X Ganhou")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
-            self.jogada["text"]="Jogador O ganhou"
+            tkm.showinfo(title = "Game Over", message = "Jogador O Ganhou")
+            self.jogada["text"]="Proxima Jogada: O"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
-            self.jogada["text"]="Empate"
+            tkm.showinfo(title = "Game Over", message = "Empate")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
@@ -110,25 +109,22 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Jogador X ganhou":
-            self.jogada["text"]="Proxima Jogada: O"
-        elif self.jogada["text"]=="Jogador O ganhou":
-            self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Empate":
-            self.jogada["text"]="Proxima Jogada: O"
-       
+               
         if self.jogo.verifica_ganhador()==1:
-            self.jogada["text"]="Jogador X ganhou"
+            tkm.showinfo(title = "Game Over", message = "Jogador X Ganhou")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
-            self.jogada["text"]="Jogador O ganhou" 
+            tkm.showinfo(title = "Game Over", message = "Jogador O Ganhou")
+            self.jogada["text"]="Proxima Jogada: O"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
-            self.jogada["text"]="Empate"
+            tkm.showinfo(title = "Game Over", message = "Empate")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
@@ -141,25 +137,22 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Jogador X ganhou":
-            self.jogada["text"]="Proxima Jogada: O"
-        elif self.jogada["text"]=="Jogador O ganhou":
-            self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Empate":
-            self.jogada["text"]="Proxima Jogada: O"
-       
+              
         if self.jogo.verifica_ganhador()==1:
-            self.jogada["text"]="Jogador X ganhou"
+            tkm.showinfo(title = "Game Over", message = "Jogador X Ganhou")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
-            self.jogada["text"]="Jogador O ganhou" 
+            tkm.showinfo(title = "Game Over", message = "Jogador O Ganhou")
+            self.jogada["text"]="Proxima Jogada: O"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
-            self.jogada["text"]="Empate"
+            tkm.showinfo(title = "Game Over", message = "Empate")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
@@ -171,25 +164,22 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Jogador X ganhou":
-            self.jogada["text"]="Proxima Jogada: O"
-        elif self.jogada["text"]=="Jogador O ganhou":
-            self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Empate":
-            self.jogada["text"]="Proxima Jogada: O"
-       
+              
         if self.jogo.verifica_ganhador()==1:
-            self.jogada["text"]="Jogador X ganhou"
+            tkm.showinfo(title = "Game Over", message = "Jogador X Ganhou")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
-            self.jogada["text"]="Jogador O ganhou" 
+            tkm.showinfo(title = "Game Over", message = "Jogador O Ganhou") 
+            self.jogada["text"]="Proxima Jogada: O"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
-            self.jogada["text"]="Empate"
+            tkm.showinfo(title = "Game Over", message = "Empate")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
@@ -201,25 +191,22 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Jogador X ganhou":
-            self.jogada["text"]="Proxima Jogada: O"
-        elif self.jogada["text"]=="Jogador O ganhou":
-            self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Empate":
-            self.jogada["text"]="Proxima Jogada: O"
-        
+                
         if self.jogo.verifica_ganhador()==1:
-            self.jogada["text"]="Jogador X ganhou"
+            tkm.showinfo(title = "Game Over", message = "Jogador X Ganhou")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
-            self.jogada["text"]="Jogador O ganhou" 
+            tkm.showinfo(title = "Game Over", message = "Jogador O Ganhou") 
+            self.jogada["text"]="Proxima Jogada: O"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
-            self.jogada["text"]="Empate"
+            tkm.showinfo(title = "Game Over", message = "Empate")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
@@ -231,25 +218,22 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Jogador X ganhou":
-            self.jogada["text"]="Proxima Jogada: O"
-        elif self.jogada["text"]=="Jogador O ganhou":
-            self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Empate":
-            self.jogada["text"]="Proxima Jogada: O"
-            
+                   
         if self.jogo.verifica_ganhador()==1:
-            self.jogada["text"]="Jogador X ganhou"
+            tkm.showinfo(title = "Game Over", message = "Jogador X Ganhou")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
-            self.jogada["text"]="Jogador O ganhou" 
+            tkm.showinfo(title = "Game Over", message = "Jogador O Ganhou")
+            self.jogada["text"]="Proxima Jogada: O"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
-            self.jogada["text"]="Empate"
+            tkm.showinfo(title = "Game Over", message = "Empate")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
@@ -261,25 +245,22 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Jogador X ganhou":
-            self.jogada["text"]="Proxima Jogada: O"
-        elif self.jogada["text"]=="Jogador O ganhou":
-            self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Empate":
-            self.jogada["text"]="Proxima Jogada: O"
-        
+                
         if self.jogo.verifica_ganhador()==1:
-            self.jogada["text"]="Jogador X ganhou"
+            tkm.showinfo(title = "Game Over", message = "Jogador X Ganhou")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
-            self.jogada["text"]="Jogador O ganhou" 
+            tkm.showinfo(title = "Game Over", message = "Jogador O Ganhou") 
+            self.jogada["text"]="Proxima Jogada: O"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
-            self.jogada["text"]="Empate"
+            tkm.showinfo(title = "Game Over", message = "Empate")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
@@ -291,25 +272,22 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Jogador X ganhou":
-            self.jogada["text"]="Proxima Jogada: O"
-        elif self.jogada["text"]=="Jogador O ganhou":
-            self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Empate":
-            self.jogada["text"]="Proxima Jogada: O"
-        
+                
         if self.jogo.verifica_ganhador()==1:
-            self.jogada["text"]="Jogador X ganhou"
+            tkm.showinfo(title = "Game Over", message = "Jogador X Ganhou")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
-            self.jogada["text"]="Jogador O ganhou"
+            tkm.showinfo(title = "Game Over", message = "Jogador O Ganhou")
+            self.jogada["text"]="Proxima Jogada: O"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
-            self.jogada["text"]="Empate"
+            tkm.showinfo(title = "Game Over", message = "Empate")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
@@ -321,25 +299,22 @@ class Tabuleiro:
             self.jogada["text"]="Proxima Jogada: O"
         elif self.jogada["text"]=="Proxima Jogada: O":
             self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Jogador X ganhou":
-            self.jogada["text"]="Proxima Jogada: O"
-        elif self.jogada["text"]=="Jogador O ganhou":
-            self.jogada["text"]="Proxima Jogada: X"
-        elif self.jogada["text"]=="Empate":
-            self.jogada["text"]="Proxima Jogada: O"
-   
+           
         if self.jogo.verifica_ganhador()==1:
-            self.jogada["text"]="Jogador X ganhou"
+            tkm.showinfo(title = "Game Over", message = "Jogador X Ganhou")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"
         elif self.jogo.verifica_ganhador()==2:
-            self.jogada["text"]="Jogador O ganhou" 
+            tkm.showinfo(title = "Game Over", message = "Jogador O Ganhou") 
+            self.jogada["text"]="Proxima Jogada: O"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "X"
         elif self.jogo.verifica_ganhador()==0:
-            self.jogada["text"]="Empate"
+            tkm.showinfo(title = "Game Over", message = "Empate")
+            self.jogada["text"]="Proxima Jogada: X"
             self.limpar_painel()
             self.jogo.limpa_jogadas()
             self.jogo.jogador = "O"

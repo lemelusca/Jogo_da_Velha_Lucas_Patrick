@@ -43,12 +43,12 @@ class Jogo():
                 return 1
             elif self.A[0][2]=="X":
                 return 2   
-        elif (self.A[0][0]==self.A[1][1] and self.A[1][1]==self.A[2][2]):
+        elif self.A[0][0]==self.A[1][1] and self.A[1][1]==self.A[2][2]:
             if self.A[1][1]=="O":
                 return 1
             elif self.A[1][1]=="X":
                 return 2
-        elif (self.A[0][2]==self.A[1][1] and self.A[1][1]==self.A[2][0]):
+        elif self.A[0][2]==self.A[1][1] and self.A[1][1]==self.A[2][0]:
             if self.A[1][1]=="O":
                 return 1
             elif self.A[1][1]=="X":
